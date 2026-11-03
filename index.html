@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover timeless design at Digital Luxury Watches.">
+  <title>ÉLÉGANCE | Digital Luxury Watches</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-mark">É</span><span>ÉLÉGANCE<small> DIGITAL LUXURY WATCHES</small></span></a>
+  <nav><a href="#collection">Collection</a><a href="#story">Our Story</a><a href="#contact">Contact</a></nav>
+  <div class="header-actions"><button class="text-btn" id="accountBtn">Sign in</button><button class="cart-btn" id="cartBtn">Bag <span id="cartCount">0</span></button><button class="menu-btn" id="menuBtn">☰</button></div>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-copy"><p class="eyebrow">TIMELESS BY DESIGN · EST. 2026</p><h1>Make every<br><em>second</em> count.</h1><p class="hero-text">Discover exceptional timepieces where precision meets personal style. Crafted to accompany every moment that matters.</p><a class="gold-btn" href="#collection">EXPLORE THE COLLECTION <span>↗</span></a><div class="hero-note"><span>✦</span> A statement of quiet confidence</div></div>
+  <div class="hero-image"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=90" alt="Luxury wristwatch"><div class="image-label">THE ART OF TIME <span>01 / 06</span></div></div>
+  <div class="hero-vertical">PRECISION · ELEGANCE · LEGACY</div>
+</section>
+<section class="trust-row"><div><b>01</b><span>Curated timepieces</span></div><div><b>02</b><span>Quality craftsmanship</span></div><div><b>03</b><span>Secure demo checkout</span></div><div><b>04</b><span>Customer-first service</span></div></section>
+<section class="collection section" id="collection">
+  <div class="section-head"><div><p class="eyebrow">THE EDIT</p><h2>Our collection<span>.</span></h2></div><p>Distinctive designs. Considered details.<br>Find the watch that feels like you.</p></div>
+  <div class="toolbar"><input id="searchInput" type="search" placeholder="Search watches or brands…"><select id="categoryFilter"><option>All</option><option>Automatic</option><option>Chronograph</option><option>Dress</option><option>Sport</option></select><select id="sortFilter"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></div>
+  <div class="product-grid" id="productGrid"><div class="loading">Curating your collection…</div></div>
+</section>
+<section class="story section" id="story"><div class="story-photo"><img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=1000&q=85" alt="Watch detail"></div><div class="story-copy"><p class="eyebrow">MORE THAN TIME</p><h2>Designed to be<br><em>remembered.</em></h2><p>At ÉLÉGANCE, we believe a watch is more than an instrument. It is a reflection of character, a keeper of memories and a companion for the moments that define you.</p><p>Explore a considered selection of modern classics, statement pieces and everyday essentials.</p><a href="#collection" class="under-link">FIND YOUR TIMEPIECE ↗</a></div></section>
+<section class="newsletter"><p class="eyebrow">STAY IN THE MOMENT</p><h2>Good things take time.</h2><p>Questions about a timepiece? Our team would love to help.</p><a href="mailto:hello@elegancewatches.demo" class="gold-btn">CONTACT OUR TEAM ↗</a></section>
+</main>
+<footer id="contact"><a class="brand footer-brand" href="#"><span class="brand-mark">É</span><span>ÉLÉGANCE<small> DIGITAL LUXURY WATCHES</small></span></a><p>Thoughtful design. Timeless moments.</p><div><a href="mailto:hello@elegancewatches.demo">hello@elegancewatches.demo</a><span> · </span><a href="tel:+919876543210">+91 98765 43210</a></div><small>© 2026 ÉLÉGANCE. Student project demo store. All prices in INR.</small></footer>
+
+<div class="modal-backdrop" id="authModal"><div class="modal"><button class="close" data-close="authModal">×</button><p class="eyebrow">WELCOME TO ÉLÉGANCE</p><h2 id="authTitle">Sign in</h2><form id="authForm"><div id="nameField" class="hidden"><label>Your name</label><input id="authName" placeholder="Full name"></div><label>Email address</label><input id="authEmail" type="email" required placeholder="you@example.com"><label>Password</label><input id="authPassword" type="password" required minlength="6" placeholder="At least 6 characters"><button class="gold-btn full" id="authSubmit">SIGN IN</button></form><p class="switch-auth" id="authSwitch">New here? <button id="toggleAuth">Create an account</button></p><p class="form-message" id="authMessage"></p></div></div>
+<div class="drawer-backdrop" id="cartBackdrop"><aside class="drawer"><div class="drawer-head"><h2>Your bag</h2><button class="close" id="closeCart">×</button></div><div id="cartItems"></div><div class="cart-bottom"><div class="total-line"><span>Subtotal</span><b id="cartTotal">₹0</b></div><button class="gold-btn full" id="checkoutBtn">CONTINUE TO CHECKOUT</button><p class="fine">Demo checkout · No payment is collected</p></div></aside></div>
+<div class="modal-backdrop" id="checkoutModal"><div class="modal"><button class="close" data-close="checkoutModal">×</button><p class="eyebrow">ALMOST YOURS</p><h2>Delivery details</h2><form id="checkoutForm"><label>Full name</label><input id="deliveryName" required><label>Phone number</label><input id="deliveryPhone" required inputmode="tel"><label>Delivery address</label><textarea id="deliveryAddress" required rows="3"></textarea><button class="gold-btn full">PLACE DEMO ORDER</button></form><p class="form-message" id="checkoutMessage"></p></div></div>
+<div class="modal-backdrop" id="ordersModal"><div class="modal wide"><button class="close" data-close="ordersModal">×</button><p class="eyebrow">YOUR ACCOUNT</p><h2>My orders</h2><div id="ordersList"></div></div></div>
+<div class="modal-backdrop" id="adminModal"><div class="modal wide"><button class="close" data-close="adminModal">×</button><p class="eyebrow">STORE MANAGEMENT</p><h2>Admin dashboard</h2><form id="productForm" class="admin-form"><input id="pName" placeholder="Product name" required><input id="pBrand" placeholder="Brand" required><select id="pCategory"><option>Automatic</option><option>Chronograph</option><option>Dress</option><option>Sport</option></select><input id="pPrice" type="number" placeholder="Price (₹)" required><input id="pStock" type="number" placeholder="Stock" required><input id="pImage" placeholder="Image URL" required><input id="pDescription" placeholder="Description"><button class="gold-btn">ADD WATCH</button></form><div id="adminProducts"></div></div></div>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body></html>
